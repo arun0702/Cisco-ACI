@@ -1,0 +1,9 @@
+
+   - name: Query all tenants
+  aci_tenant:
+    host: '{{ ansible_host }}'
+    username: '{{ ansible_user }}'
+    password: '{{ ansible_password }}'
+
+    state: query
+  register: all_tenants
